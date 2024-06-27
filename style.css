@@ -1,0 +1,111 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url(hadii.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.Login{
+    color: white;
+    border: 2px solid gray;
+    border-radius: 40px;
+    padding: 20px 30px 30px 30px;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+}
+h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.inputt{
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 60px;
+}
+.inputt :hover{
+    background-position: center;
+    padding: 5px 10px;
+    
+}
+.inputt :focus{
+    background-position: center;
+    padding: 5px 10px;
+    
+}
+.btn{
+    text-align: center;
+    
+}
+.btn input{
+    width: 70px;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 40px;
+    
+}
+.btn :active{
+    transform: scale(0,0);
+    rotate: 360deg;
+}
+.btn :hover{
+    background-image: linear-gradient(to right, rgb(153, 78, 203)  ,aqua ,rgb(152, 26, 198));
+    transition: 1s;
+    background-position: center;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+.inputt input{
+    border: none;
+    border-radius: 40px;
+}
+.inputt input::placeholder{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.s{
+    text-align: center;
+    margin-top: 10px;
+}
+.s a{
+    color: white;
+}
+.s :hover{
+color: rgb(136, 31, 235);
+}
+.Login{
+    animation-name:  log ;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+@keyframes log {
+    0%{
+        padding: none;
+    }
+    25%{
+        padding: 100px;
+    }
+    50%{
+        padding: none;
+    }
+    75%{
+        padding: 100px;
+        ;
+    }
+    100%{
+        padding: none;
+    }
+}
+.Login :hover{
+    animation-play-state: running;
+}
